@@ -9,8 +9,9 @@ class AuditionApplicationTests {
     // TODO implement unit test. Note that an applicant should create additional unit tests as required.
 
     @Test
-    void applicationContextTest() {
+    void applicationContextTest1() {
         AuditionApplication.main(new String[]{});
     }
+
 
 }
