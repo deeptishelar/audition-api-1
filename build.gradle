@@ -7,10 +7,15 @@ plugins {
     id "com.github.spotbugs" version "5.0.14"
     id "io.freefair.lombok" version "8.0.1"
     // TODO Enable checkstyle and PMD. Fix all the relevant issues.
-    //id "checkstyle"
-    //id "pmd"
+    id "checkstyle"
+    id "pmd"
 }
 
+checkstyle {
+    toolVersion = '10.12.4'
+    config = rootProject.resources.text.fromFile('config/checkstyle/checkstyle.xml')
+    ignoreFailures = true
+}
 group = 'com.audition'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
@@ -18,7 +23,7 @@ targetCompatibility = '17'
 
 
 // TODO allow for code-analysis.gradle to be applied for code analysis.
-// apply from: 'config/code-analysis.gradle'
+apply from: 'config/code-analysis.gradle'
 
 configurations {
     compileOnly {
@@ -64,6 +69,13 @@ dependencies {
 
     testImplementation "org.springframework.boot:spring-boot-starter-test"
     testImplementation "io.projectreactor:reactor-test"
+    implementation group: 'io.opentelemetry', name: 'opentelemetry-api', version: '1.31.0'
+    implementation group: 'io.opentelemetry', name: 'opentelemetry-sdk', version: '1.31.0'
+    implementation group: 'io.opentelemetry', name: 'opentelemetry-sdk-extension-autoconfigure', version: '1.31.0'
+    implementation group: 'io.opentelemetry.instrumentation', name: 'opentelemetry-instrumentation-api', version: '1.31.0'
+    testImplementation 'junit:junit:4.13.1'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '3.1.5'
+
 }
 
 dependencyManagement {

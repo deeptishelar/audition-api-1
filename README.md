@@ -1,6 +1,7 @@
 # Audition API
 
-The purpose of this Spring Boot application is to test general knowledge of SpringBoot, Java, Gradle etc. It is created for hiring needs of our company but can be used for other purposes.
+The purpose of this Spring Boot application is to test general knowledge of SpringBoot, Java, Gradle etc. It is created
+for hiring needs of our company but can be used for other purposes.
 
 ## Overarching expectations & Assessment areas
 
@@ -14,7 +15,7 @@ The purpose of this Spring Boot application is to test general knowledge of Spri
 - Proper error handling.
 - Ability to use and configure rest template. We allow for half-setup object mapper and rest template
 - Not all information in the Application is perfect. It is expected that a person would figure these out and correct.
-  
+
 ## Getting Started
 
 ### Prerequisite tooling
@@ -22,7 +23,7 @@ The purpose of this Spring Boot application is to test general knowledge of Spri
 - Any Springboot/Java IDE. Ideally IntelliJIdea.
 - Java 17
 - Gradle 8
-  
+
 ### Prerequisite knowledge
 
 - Java
@@ -45,13 +46,14 @@ __Optional__
 
 ---
 **NOTE** -
-It is  highly recommended that the application be loaded and started up to avoid any issues.
+It is highly recommended that the application be loaded and started up to avoid any issues.
 
 ---
 
 ## Audition Application information
 
-This section provides information on the application and what the needs to be completed as part of the audition application.
+This section provides information on the application and what the needs to be completed as part of the audition
+application.
 
 The audition consists of multiple TODO statements scattered throughout the codebase. The applicants are expected to:
 
@@ -62,14 +64,19 @@ The audition consists of multiple TODO statements scattered throughout the codeb
 - Make sure the application if functional.
 
 ## Submission process
-Applicants need to do the following to submit their work: 
+
+Applicants need to do the following to submit their work:
+
 - Clone this repository
-- Complete their work and zip up the working application. 
-- Applicants then need to send the ZIP archive to the email of the recruiting manager. This email be communicated to the applicant during the recruitment process. 
+- Complete their work and zip up the working application.
+- Applicants then need to send the ZIP archive to the email of the recruiting manager. This email be communicated to the
+  applicant during the recruitment process.
 
   
 ---
+
 ## Additional Information based on the implementation
 
-This section MUST be completed by applicants. It allows applicants to showcase their view on how an application can/should be documented. 
+This section MUST be completed by applicants. It allows applicants to showcase their view on how an application
+can/should be documented.
 Applicants can choose to do this in a separate markdown file that needs to be included when the code is committed. 
